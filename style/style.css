@@ -23,6 +23,7 @@ header {
 /* -----------------   NAV MENU -------------------------------- */
 
 .hidden__menu-active {
+	border: 1px solid grey;
 	display: none;
 	opacity: 0;
 	width: 100%;
@@ -54,12 +55,14 @@ header {
 	align-items: center;
 	margin-bottom: 20px;
 }
-.hidden__menu-active-item li a {
+.hidden__menu-active-item a span {
 	transition: all 0.4s ease;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
 }
 .hidden__menu-active-item a:hover {
-	color: grey;
-	text-decoration: underline;
+	font-weight: 600;
 }
 .hidden__menu-active-item a span {
 	display: inline-block;
@@ -194,5 +197,336 @@ header {
 	max-width: 350px;
 	cursor: pointer;
 }
+/* -------------- Main ---------------------- */
+/* ----- Slider --------------- */
+main {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #fff;
+}
 
-/* background-image: linear-gradient(90deg, #e3535d, #2aa5a0); */
+.single-img img {
+	width: 400px;
+	height: auto;
+}
+.section__slider-title {
+	padding-left: 5px;
+	max-width: 350px;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+/* ------- end Slider ------------ */
+
+/* ------------ progress -------------- */
+.section__info {
+	padding: 10px;
+}
+.section__info-progress span {
+	color: #ff4053;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+}
+.section__info-progress_item {
+	position: relative;
+	border-radius: 8px;
+	width: 345px;
+	height: 8px;
+	background-color: #ebeae8;
+}
+
+.section__info-progress_item div {
+	position: absolute;
+	border-radius: 8px;
+	width: 33%;
+	height: 8px;
+	background-color: #ff4053;
+}
+.section__info p {
+	max-width: max-content;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.section__info p span {
+	display: block;
+	height: 10px;
+}
+.section__info-sale {
+	margin-top: 20px;
+	padding: 5px 10px;
+	background-color: #f5f5f6;
+	border-radius: 20px;
+}
+.section__info-sale div {
+	display: flex;
+	justify-content: center;
+}
+.section__info-sale div span {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.time-out {
+	color: #b15fff;
+	margin-left: 10px;
+}
+.section__info-sale_price {
+	margin-top: 20px;
+}
+.section__info-sale_first {
+	display: block;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 40px;
+}
+.section__info-sale_second {
+	position: relative;
+}
+.section__info-sale_second::before,
+.section__info-sale_second::after {
+	content: '';
+	position: absolute;
+	z-index: 333;
+	left: 0;
+	top: 10px;
+	width: 40px;
+	height: 1px;
+	background-color: red;
+}
+.section__info-sale_second::before {
+	transform: rotate(3deg);
+}
+.section__info-sale_second::after {
+	transform: rotate(-5deg);
+}
+.section__info-sale_fird {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #ff4053;
+}
+/* -------- end progress ------------------ */
+/* --------- section buy -------------------- */
+.section__buy p {
+	text-align: center;
+	max-width: 330px;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 500;
+}
+.section__buy p span {
+	margin-right: 5px;
+	font-weight: 700;
+}
+.btn_pay {
+	width: 100%;
+	border-radius: 8px;
+	outline: none;
+	display: block;
+	margin-top: 20px;
+	border: 1px solid #b0fde4;
+	padding: 11px;
+	cursor: pointer;
+	background-color: #b0fde4;
+	transition: all 0.4s ease;
+}
+.btn_pay:hover {
+	background-color: #50645e;
+	color: white;
+}
+
+.section__buy-bottom {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+	color: #717271;
+	font-size: 14px;
+	line-height: 20;
+	font-weight: 400;
+	margin-top: 10px;
+	text-align: start;
+}
+.section__buy-bottom span {
+	display: block;
+	height: 10px;
+}
+
+.section__buy h2 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
+	font-weight: 600;
+	line-height: 28px;
+	font-size: 20px;
+}
+.section__buy h2 span {
+	position: relative;
+	display: inline-block;
+	width: 10px;
+	height: 2px;
+	background-color: black;
+	margin-left: 20px;
+	transform: rotate(-45deg);
+}
+.section__buy h2 span::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	transform: rotate(-90deg);
+	background-color: black;
+	left: 5px;
+	top: 5px;
+}
+
+.section__buy-bottom_delivery {
+	margin-top: 20px;
+}
+.section__buy-bottom_delivery p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #6b6b6b;
+	text-align: start;
+}
+/* -------- section buy end ------------------- */
+/* ------------- end Main ----------------------- */
+
+/* -------------------- FOOTER ----------------------- */
+footer {
+	background-color: #000;
+	padding: 24px;
+}
+footer p {
+	max-width: 350px;
+	font-size: 8px;
+	line-height: 12px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	opacity: 0.7;
+	margin-bottom: 30px;
+}
+
+footer button {
+	display: block;
+	margin-top: 20px;
+	margin: 0 auto;
+	background-color: #fff;
+	opacity: 0.7;
+	padding: 3px 15px;
+	border-radius: 10px;
+}
+
+/* ------------------ end FOOTER ------------------------ */
+
+/* ----------------- hidden buy ----------------- */
+.hidden__buy {
+	display: none;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 15px 10px;
+	border: 1px solid #b0fde4;
+	border-radius: 10px;
+}
+.hidden__buy-active {
+	display: block;
+}
+.hidden__buy-item span {
+	display: block;
+	font-weight: 600;
+	font-size: 20px;
+}
+.hidden__buy-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hidden__buy-center h2 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.hidden__buy-center_info {
+	padding: 8px 10px;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+}
+
+.hidden__buy-center_info-top span {
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18px;
+}
+.hidden__buy-center_info-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.hidden__buy-center_info-top span:last-child {
+	border: 1px solid #b0fde4;
+	background-color: #b0fde4;
+	padding: 2px 5px;
+	border-radius: 10px;
+}
+
+.hidden__buy-center_info-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.hidden__buy-center_info-bottom li {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.hidden__buy-center_info-bottom li span.span__title {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 17.07px;
+	color: #545454;
+}
+.hidden__buy-center_info-bottom li span.span__desc {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17.07px;
+	color: #545454;
+}
+.hidden__dashed {
+	width: 380px;
+	height: 20px;
+	border-bottom: 1px dashed #545454;
+	margin-bottom: 30px;
+}
+
+.hidden__buy-center button {
+	width: 100%;
+	display: block;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 25px;
+	background-color: #b0fde4;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid #b0fde4;
+	border-radius: 10px;
+}
+/*  ------------------ end hidden buy ------------------------- */
