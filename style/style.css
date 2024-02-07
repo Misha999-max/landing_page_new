@@ -19,6 +19,7 @@ ul li {
 }
 header {
 	position: relative;
+	overflow-y: hidden;
 }
 /* -----------------   NAV MENU -------------------------------- */
 
